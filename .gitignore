@@ -1,0 +1,6 @@
+.vscode
+__pycache__
+*.code-workspace
+/project_env/
+
+dice_visual.svg
