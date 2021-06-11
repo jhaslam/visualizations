@@ -3,4 +3,4 @@ __pycache__
 *.code-workspace
 /project_env/
 
-dice_visual.svg
+/dice_visual.svg
