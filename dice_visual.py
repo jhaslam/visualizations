@@ -10,17 +10,13 @@ from die import Die
 die1 = Die()
 die2 = Die()
 
-results: list[int] = []
-for roll_num in range(1000):
-    result = die1.roll() + die2.roll()
-    results.append(result)
+num_possible_results = die1.num_sides + die2.num_sides
+frequencies: list[int] = [0] * num_possible_results
 
 # Frequency analysis
-frequencies: list[int] = []
-num_possible_results = die1.num_sides + die2.num_sides
-for value in range(1, num_possible_results + 1):
-    frequency = results.count(value)
-    frequencies.append(frequency)
+for roll_num in range(1000):
+    result = die1.roll() + die2.roll()
+    frequencies[result] += 1
 
 # Visualize the results using a pygal histogram
 hist = Bar()

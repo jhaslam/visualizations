@@ -36,3 +36,12 @@ of many trials of rolling dice
 
 To run:  
 `python dice_visual.py`
+
+## `highs_lows.py`
+
+![screenshot](docs/highs_lows.png)
+
+Reads data in CSV format and plots it out using matplotlib pyplot
+
+To run:  
+`python highs_lows.py`

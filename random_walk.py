@@ -11,8 +11,8 @@ class RandomWalk():
 
     def fill_walk(self) -> None:
         while len(self.x_values) < self.num_points:
-            x_step = RandomWalk._get_step()
-            y_step = RandomWalk._get_step()
+            x_step = self._get_step()
+            y_step = self._get_step()
 
             # Reject moves that go nowhere
             if x_step == 0 and y_step == 0:
@@ -24,7 +24,7 @@ class RandomWalk():
             self.x_values.append(next_x)
             self.y_values.append(next_y)
 
-    def _get_step() -> int:
+    def _get_step(self) -> int:
         direction = choice([1, -1])
         distance = choice([0, 1, 2, 3, 4])
         return direction * distance
