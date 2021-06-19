@@ -8,6 +8,7 @@ in Python. The libraries featured are matplotlib and pygal.
 - `./project_env/Scripts/activate`
 - `pip install -r requirements.txt`
 
+
 ## `mpl_squares.py`
 
 ![screenshot](docs/mpl_squares.png)
@@ -18,6 +19,7 @@ a HelloWorld of this graphing library.
 To run:  
 `python mpl_squares.py`
 
+
 ## `rw_visual.py`
 
 ![screenshot](docs/rw_visual.png)
@@ -26,6 +28,7 @@ Visualizes a random walk using the gradient feature of matplotlib.
   
 To run:  
 `python rw_visual.py`
+
 
 ## `dice_visual.py`
 
@@ -37,6 +40,7 @@ of many trials of rolling dice
 To run:  
 `python dice_visual.py`
 
+
 ## `highs_lows.py`
 
 ![screenshot](docs/highs_lows.png)
@@ -45,3 +49,13 @@ Reads data in CSV format and plots it out using matplotlib pyplot
 
 To run:  
 `python highs_lows.py`
+
+
+## `world_polulation.py`
+
+<img src="docs/world_population.svg" width="400">
+
+Uses pygal to make an interactive SVG of world population by country.
+
+To run:  
+`python -m population`
