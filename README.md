@@ -59,3 +59,13 @@ Uses pygal to make an interactive SVG of world population by country.
 
 To run:  
 `python -m population`
+
+
+## `python_repos.py`
+
+<img src="docs/python_repos.svg" width="400">
+
+Uses the GitHub public API to chart the most starred public Python repos
+
+To run:  
+`python -m apis/python_repos.py`

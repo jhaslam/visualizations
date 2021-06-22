@@ -16,7 +16,7 @@ frequencies: list[int] = [0] * num_possible_results
 # Frequency analysis
 for roll_num in range(1000):
     result = die1.roll() + die2.roll()
-    frequencies[result] += 1
+    frequencies[result - 1] += 1
 
 # Visualize the results using a pygal histogram
 hist = Bar()
